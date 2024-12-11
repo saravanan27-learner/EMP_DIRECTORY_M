@@ -1,5 +1,5 @@
 # Employee Directory - ABAP RAP Project
-#Overview
+### Overview
 The Employee Directory is an SAP ABAP RESTful Application Programming (RAP) project designed to manage employee records. It showcases the capabilities of RAP in building end-to-end business applications with modern SAP technologies.
 
 ### This project includes:
