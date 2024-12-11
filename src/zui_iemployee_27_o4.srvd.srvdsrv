@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_IEMPLOYEE_27'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_IEMPLOYEE_27'
+  }
+}
+define service ZUI_IEMPLOYEE_27_O4 provider contracts odata_v4_ui {
+  expose ZC_IEMPLOYEE_27 as EMPLOYEE_DIR;
+}

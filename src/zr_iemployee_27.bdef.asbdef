@@ -1,0 +1,48 @@
+managed implementation in class ZBP_R_IEMPLOYEE_27 unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_IEMPLOYEE_27 alias EMPLOYEE_DIR
+persistent table ZIEMPLOYEE_27
+draft table ZIEMPLOYEE_27_D
+etag master LastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   EmpId;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt;
+
+  field ( readonly : update )
+   EmpId;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZIEMPLOYEE_27
+  {
+    EmpId = emp_id;
+    EmpName = emp_name;
+    EmpDepartment = emp_department;
+    EmpEmail = emp_email;
+    EmpPhone = emp_phone;
+    DateOfJoining = date_of_joining;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+  }
+}

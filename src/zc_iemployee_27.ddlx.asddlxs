@@ -1,0 +1,142 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'EmpId'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'EmpId'
+annotate view ZC_IEMPLOYEE_27 with
+{
+  @EndUserText.label: 'EmpId'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'EmpId'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'EmpId'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  EmpId;
+  
+  @EndUserText.label: 'EmpName'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'EmpName'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'EmpName'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  EmpName;
+  
+  @EndUserText.label: 'EmpDepartment'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'EmpDepartment'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'EmpDepartment'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  EmpDepartment;
+  
+  @EndUserText.label: 'EmpEmail'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'EmpEmail'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'EmpEmail'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  EmpEmail;
+  
+  @EndUserText.label: 'EmpPhone'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'EmpPhone'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'EmpPhone'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  EmpPhone;
+  
+  @EndUserText.label: 'DateOfJoining'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'DateOfJoining'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'DateOfJoining'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  DateOfJoining;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LastChangedAt;
+}
